@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Halaman Kontak</title>
+  <style>
+    /* Gaya CSS untuk tata letak halaman */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+    
+    /* Gaya CSS untuk formulir kontak */
+    .contact-form {
+      max-width: 400px;
+      margin: 0 auto;
+    }
+    
+    .contact-form input[type="text"],
+    .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+    
+    .contact-form button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+    }
+    
+    .contact-form button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <center><h1>Hubungi Kami</h1></center>
+  <div class="contact-form">
+    <form action="proses_kontak.php" method="POST">
+      <input type="text" name="nama" placeholder="Nama Anda" required>
+      <input type="text" name="email" placeholder="Email Anda" required>
+      <textarea name="pesan" placeholder="Pesan Anda" required></textarea>
+      <button type="submit">Kirim Pesan</button>
+    </form>
+  </div>
+</body>
+</html>
